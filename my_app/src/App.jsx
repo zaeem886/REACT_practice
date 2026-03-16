@@ -1,12 +1,12 @@
-import MyComponent from './MyComponent.jsx';
+import DigitalClock from "./DigitalClock.jsx";
 
-export default function App() {
-  return (
-    <div>
-      <h1>Hello, React!</h1>
-      <MyComponent />
-    </div>
-  );
+function App() {
+    return (
+        <div>
+           
+            <DigitalClock />
+        </div>
+    );
 }
 
-
+export default App;
