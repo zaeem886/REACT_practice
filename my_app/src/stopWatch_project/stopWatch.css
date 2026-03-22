@@ -1,0 +1,98 @@
+.stopWatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  width: 450px;
+  margin: 2.5rem auto;
+  border: 1.5px solid #e0e7ef;
+}
+
+.display {
+  font-size: 3rem;
+  font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+  margin-bottom: 1.5rem;
+  color: #22223b;
+  letter-spacing: 0.08em;
+  background: #fff;
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  min-width: 220px;
+  text-align: center;
+}
+
+.control {
+  display: flex;
+  gap: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+.start-button, .stop-button, .reset-button, .lap-button {
+  padding: 0.55rem 1.3rem;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  transition: background 0.2s, transform 0.1s;
+  outline: none;
+}
+
+.lap-button {
+  background: #ff9800;
+  color: #fff;
+  margin-left: 0.2rem;
+}
+.lap-times {
+  margin-top: 1.7rem;
+  width: 100%;
+  color: #22223b;
+  background: #f8fafc;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  padding: 1rem 1.2rem 0.7rem 1.2rem;
+  font-size: 1.08rem;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.lap-times-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #3a3a40;
+  font-size: 1.1rem;
+}
+
+.lap-list {
+  list-style: decimal inside;
+  margin: 0;
+  padding: 0;
+}
+
+.lap-list li {
+  padding: 0.2rem 0;
+  border-bottom: 1px solid #e0e7ef;
+  font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+  font-size: 1.02rem;
+}
+
+.lap-list li:last-child {
+  border-bottom: none;
+}
+
+.start-button { background: #4caf50; color: #fff; }
+.stop-button { background: #f44336; color: #fff; }
+.reset-button { background: #2196f3; color: #fff; }
+.lap-button:hover { background: #fb8c00; }
+.start-button:hover { background: #388e3c; transform: translateY(-2px) scale(1.04); }
+.stop-button:hover { background: #c62828; transform: translateY(-2px) scale(1.04); }
+.reset-button:hover { background: #1565c0; transform: translateY(-2px) scale(1.04); }
